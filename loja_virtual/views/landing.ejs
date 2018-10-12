@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-header">
+        Loja Virtual
+      </div>
+      <% produtos.forEach(produto => { %>
+      <div class="card-body">
+        <h5 class="card-title"><%= produto.descricao %></h5>
+        <p class="card-text">Preço: <%= produto.preco %></p>
+        <a href="/comprarProduto/<%= produto.idProduto %>" class="btn btn-primary">Comprar</a>
+      </div>
+      <%})%>
+    </div>
+    <script src='/js/bootstrap.min.js'></script>
+  </body>
+</html>
