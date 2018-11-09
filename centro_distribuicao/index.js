@@ -9,12 +9,12 @@ var fs = require('fs');
 
 function imprimeDados(titulo = '', dados = {}) {
   var output = ( 
-`#############################################
-${titulo.toUpperCase()}
+  `#############################################
+  ${titulo.toUpperCase()}
 
-${JSON.stringify(dados)}
-#############################################
-`);
+  ${JSON.stringify(dados)}
+  #############################################
+  `);
 
   console.log(output);
 }
